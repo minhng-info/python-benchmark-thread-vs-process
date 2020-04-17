@@ -17,11 +17,24 @@ Run benchmarking with the following command:
 $ python_benchmark_thread_vs_process
 ```
 
-# Benchmarks
+# Benchmarking Results
 
-TODO
+| Num CPUs               | CPU Freq (MHz)         | Multi-Thread Time (s)  | Multi-Process Time (s) | Num Test Operation     |
+|------------------------|------------------------|------------------------|------------------------|------------------------|
+| 1                      | 2500                   | 1.2260                 | 1.2269                 | 10                     |
 
 # Contributing
+
+## Benchmarking
+
+To contribute to our benchmark table, please follow these steps:
+
+* Step 1: Install package: `pip install python-benchmark-thread-vs-process`
+* Step 2: Run benchmarking on your machine / server with the command: `python_benchmark_thread_vs_process`
+* Step 3: If your system information has not been included in the benchmarking results, please create a new issue ticket (with `enhancement` label) and submit your benchmarking result. Your submission is welcome!
+* Step 4: We'll review and update the benchmarking results.
+
+## Code development
 
 * Step 1. Fork on **master** branch.
 * Step 2. Install **pre-commit** on the local dev environment.
