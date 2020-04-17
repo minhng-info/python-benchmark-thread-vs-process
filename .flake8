@@ -2,4 +2,4 @@
 max-line-length = 120
 exclude =
   python_benchmark_thread_vs_process/__init__.py
-  python_benchmark_thread_vs_process/TableIt.py
+  python_benchmark_thread_vs_process/cpuinfo.py

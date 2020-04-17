@@ -3,3 +3,4 @@ pytest
 psutil
 wheel
 twine
+terminaltables
