@@ -28,14 +28,14 @@ def run(nops=None):
     args = sys.argv[1:]
 
     ncpus = multiprocessing.cpu_count()
-    num_op = ncpus * 10
+    num_op = 100
 
     if len(args) >= 1:
         if is_number(s=args[0]):
             num_op = int(args[0])
         else:
             print(
-                """USAGE: $ python_benchmark_thread_vs_process <NUM_OPERATIONS> (default: NUM_OPERATIONS=NCPUS*10=%d)
+                """USAGE: $ python_benchmark_thread_vs_process <NUM_OPERATIONS_PER_CHILD> (default: NUM_OPERATIONS_PER_CHILD=%d)
 Eg. $ python_benchmark_thread_vs_process 10"""
                 % num_op
             )
@@ -51,7 +51,7 @@ Eg. $ python_benchmark_thread_vs_process 10"""
             "Current CPU Freq (MHz)",
             "Multi-Thread Time (s)",
             "Multi-Process Time (s)",
-            "Num Test Op",
+            "Total Test Operation",
         ]
     )
 
@@ -85,7 +85,7 @@ Eg. $ python_benchmark_thread_vs_process 10"""
     tdelta = tend - tstart  # seconds
     out_table[1].append("%.4f" % tdelta)
 
-    out_table[1].append(str(num_op))
+    out_table[1].append(str(ncpus * num_op))
 
     benchmark_result_banner = [
         "====================",
