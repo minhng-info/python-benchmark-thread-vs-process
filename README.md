@@ -6,7 +6,13 @@ A benchmark on speed evaluation between multi-thread and multi-process in Python
 # Installation
 
 ```
-$ pip install python_benchmark_thread_vs_process
+$ pip3 install python_benchmark_thread_vs_process
+```
+
+Install package and run test in one command:
+
+```
+$ sudo pip3 install python_benchmark_thread_vs_process && python_benchmark_thread_vs_process
 ```
 
 # Usage
@@ -22,6 +28,7 @@ $ python_benchmark_thread_vs_process
 | Num CPUs               | CPU Freq (MHz)         | Multi-Thread Time (s)  | Multi-Process Time (s) | Num Test Operation     |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
 | 1                      | 2500                   | 1.2260                 | 1.2269                 | 10                     |
+| 16                     | 2597                   | 157.0499               | 11.4933                | 160                    |
 
 # Contributing
 

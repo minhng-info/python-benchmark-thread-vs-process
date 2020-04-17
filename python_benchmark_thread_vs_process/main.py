@@ -6,7 +6,9 @@ import multiprocessing
 from .multi_thread import MultiThread
 from .multi_process import MultiProcess
 
-from . import TableIt
+# https://github.com/Robpol86/terminaltables
+from terminaltables import AsciiTable
+from . import cpuinfo
 
 
 def is_number(s):
@@ -45,21 +47,24 @@ Eg. $ python_benchmark_thread_vs_process 10"""
     out_table.append(
         [
             "Num CPUs",
-            "CPU Freq (MHz)",
+            "CPU Model",
+            "Current CPU Freq (MHz)",
             "Multi-Thread Time (s)",
             "Multi-Process Time (s)",
-            "Num Test Operation",
+            "Num Test Op",
         ]
     )
 
     out_table.append([str(ncpus)])
 
-    current_cpu_feq = round(psutil.cpu_freq().current)
-    out_table[1].append("%.0f" % current_cpu_feq)
+    cpu_info = psutil.cpu_freq()
+    current_cpu_freq = round(cpu_info.current)
+    out_table[1].append(cpuinfo.cpu.info[0]["model name"])
+    out_table[1].append("%.0f" % current_cpu_freq)
 
     print(
         "Benchmarking (%d CPUs @ %s) ... please wait..."
-        % (int(ncpus), "%.0fMHz" % current_cpu_feq)
+        % (int(ncpus), "%.0fMHz" % current_cpu_freq)
     )
 
     # multi-thread benchmarking
@@ -88,7 +93,7 @@ Eg. $ python_benchmark_thread_vs_process 10"""
         "====================",
     ]
     print("\n".join(benchmark_result_banner))
-    TableIt.printTable(out_table, useFieldNames=True, color=(26, 156, 171))
+    print(AsciiTable(out_table).table)
     pass
 
 

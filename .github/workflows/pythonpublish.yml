@@ -1,4 +1,4 @@
-name: Publish Plazy to PyPI
+name: Publish package to PyPI
 
 on:
   push:
