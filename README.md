@@ -12,6 +12,8 @@ A benchmark on speed evaluation between multi-thread and multi-process in Python
 $ sudo pip3 install python_benchmark_thread_vs_process
 ```
 
+Note: this package only supports Python 3.
+
 Install package and run test in one command:
 
 ```
