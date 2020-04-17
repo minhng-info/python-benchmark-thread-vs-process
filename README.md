@@ -3,6 +3,9 @@
 # python-benchmark-thread-vs-process
 A benchmark on speed evaluation between multi-thread and multi-process in Python
 
+* PyPI: [https://pypi.org/project/python-benchmark-thread-vs-process/](https://pypi.org/project/python-benchmark-thread-vs-process/)
+* Github: [https://github.com/minhng-info/python-benchmark-thread-vs-process](https://github.com/minhng-info/python-benchmark-thread-vs-process)
+
 # Installation
 
 ```
@@ -28,6 +31,8 @@ Note: It takes up to 15 minutes to finish the test. Please be patient!
 # Benchmarking Results
 
 Try to keep your CPUs usage free as much as possible before benchmarking.
+
+For latest benchmarking result, please checkout @ [https://github.com/minhng-info/python-benchmark-thread-vs-process](https://github.com/minhng-info/python-benchmark-thread-vs-process)
 
 | Num CPUs | CPU Model | Current CPU Freq (MHz) | Multi-Thread Time (s) | Multi-Process Time (s) | Total Test Operation | Contributor |
 |---|---|---|---|---|---|---|
