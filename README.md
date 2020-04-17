@@ -6,7 +6,7 @@ A benchmark on speed evaluation between multi-thread and multi-process in Python
 # Installation
 
 ```
-$ pip3 install python_benchmark_thread_vs_process
+$ sudo pip3 install python_benchmark_thread_vs_process
 ```
 
 Install package and run test in one command:
@@ -23,12 +23,21 @@ Run benchmarking with the following command:
 $ python_benchmark_thread_vs_process
 ```
 
+Note: It takes up to 15 minutes to finish the test. Please be patient!
+
 # Benchmarking Results
 
-| Num CPUs               | CPU Freq (MHz)         | Multi-Thread Time (s)  | Multi-Process Time (s) | Num Test Operation     |
-|------------------------|------------------------|------------------------|------------------------|------------------------|
-| 1                      | 2500                   | 1.2260                 | 1.2269                 | 10                     |
-| 16                     | 2597                   | 157.0499               | 11.4933                | 160                    |
+Try to keep your CPUs usage free as much as possible before benchmarking.
+
+| Num CPUs | CPU Model | Current CPU Freq (MHz) | Multi-Thread Time (s) | Multi-Process Time (s) | Total Test Operation | Contributor |
+|---|---|---|---|---|---|---|
+| 1        | Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz | 2500                   | 11.7581               | 12.0673                | 100                  | @minhng92 |
+| 4        | Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz | 2474                   | 55.3840               | 8.8589                 | 400                  | @minhng92 |
+| 4        | Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz | 2683                   | 20.9098               | 10.9195                | 400                  | @minhng92 |
+| 16       | Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz | 2597                   | 98.6584               | 7.1033                 | 1600                 | @minhng92 |
+| 24       | Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz | 1331                   | 372.3926              | 18.5923                | 2400                 | @minhng92 |
+| 32       | Intel(R) Xeon(R) Silver 4108 CPU @ 1.80GHz | 809                    | 478.8115              | 15.0538                | 3200                 | @minhng92 |
+| 72       | Intel(R) Xeon(R) Gold 5220S CPU @ 2.70GHz | 1016                   | 550.4936              | 11.6759                | 7200                 | @minhng92 |
 
 # Contributing
 
