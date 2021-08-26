@@ -59,7 +59,10 @@ Eg. $ python_benchmark_thread_vs_process 10"""
 
     cpu_info = psutil.cpu_freq()
     current_cpu_freq = round(cpu_info.current)
-    out_table[1].append(cpuinfo.cpu.info[0]["model name"])
+    try:
+        out_table[1].append(cpuinfo.cpu.info[0]["model name"])
+    except Exception:
+        out_table[1].append("N/A")
     out_table[1].append("%.0f" % current_cpu_freq)
 
     print(
