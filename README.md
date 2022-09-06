@@ -41,7 +41,9 @@ For latest benchmarking result, please checkout @ [https://github.com/minhng-inf
 | 1        | Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz | 2500                   | 11.7581               | 12.0673                | 100                  | [@minhng92](https://github.com/minhng92) |
 | 4        | ARM Cortex A53 | 1512                   | 289.2922              | 64.5466                | 400                  | [@johnhlaj](https://github.com/johnhlaj) |
 | 4        | Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz | 2474                   | 55.3840               | 8.8589                 | 400                  | [@minhng92](https://github.com/minhng92) |
+| 4        | Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz | 2678                   | 28.0052               | 4.6617                 | 400                  | [@minhng92](https://github.com/minhng92) |
 | 4        | Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz | 2683                   | 20.9098               | 10.9195                | 400                  | [@minhng92](https://github.com/minhng92) |
+| 4        | Intel(R) Xeon(R) CPU X5670 @ 2.93GHz | 2933                   | 35.8658               | 7.4669                 | 400                  | [@minhng92](https://github.com/minhng92) |
 | 16       | Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz | 822                    | 106.3637              | 12.3538                | 1600                 | [@minhng92](https://github.com/minhng92) |
 | 16       | Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz | 2597                   | 98.6584               | 7.1033                 | 1600                 | [@minhng92](https://github.com/minhng92) |
 | 24       | Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz | 1331                   | 372.3926              | 18.5923                | 2400                 | [@minhng92](https://github.com/minhng92) |
